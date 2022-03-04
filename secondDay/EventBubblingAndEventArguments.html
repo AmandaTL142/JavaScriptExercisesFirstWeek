@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-    <!--
+    <!--Påbegyndt
         a) Add a click handler to each div and write code, so when clicked, each div will write to the console
         "Hi from idOfTheDiv".
 
@@ -18,6 +18,11 @@ document.getElementById("d7").onclick= (e)=> alert(e.target.id)
 document.getElementById("d8").onclick= (e)=> alert(e.target.id)
 document.getElementById("d9").onclick= (e)=> alert(e.target.id)
 document.getElementById("d10").onclick= (e)=> alert(e.target.id)
+
+c) Add an empty paragraph tag, with an id, to your HTML and change the code for both exercises above,
+so that output is not written to the console, but into this paragraph.
+
+Hint: Use the innerText property of an Element
 
 -->
 
@@ -49,7 +54,8 @@ document.getElementById("d10").onclick= (e)=> alert(e.target.id)
 <script>
 
     document.getElementById("outer").onclick = (e) => {
-        console.log(e.target.id)
+
+        console.log("Hi from " + e.target.id)
         if (e.target.id === "outer") {
             return
         }
