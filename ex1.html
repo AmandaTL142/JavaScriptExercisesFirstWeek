@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Dom Manipulation and Events
+    Add three divs to an HTML page, each with a unique id
+
+    a) When the page initially is loaded all divs should be given a colour of your choice
+    Hints: use document.querySelectorAll("div") and element.style.backgroundColor
+
+    b) Add a button, and assign a click handler to the button. When the button is clicked each div should be given a unique colour.
+    Hints: use document.getElementById(..) to get the individual div’s
+-->
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 25px;
+            height: 25px;
+            border: 1px black solid;
+            margin: 2px;
+        }
+
+    </style>
+
+</head>
+<body>
+<div id="d1"></div>
+<div id="d2"></div>
+<div id="d3"></div>
+<script>
+    function setColors(){
+        const divs = document.querySelectorAll("div")
+        divs[0].style.backgroundColor="red"
+        divs[1].style.backgroundColor="green"
+        divs[2].style.backgroundColor="blue"
+    }
+
+
+    function setColor (d){
+        d.style.backgroundColor = "green"
+    }
+    const divs = document.querySelectorAll("div")
+    divs.forEach(d => d.style.backgroundColor = "green")
+
+</script>
+
+</body>
+</html>

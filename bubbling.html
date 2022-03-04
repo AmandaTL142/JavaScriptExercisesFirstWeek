@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--
+        a) Add a click handler to each div and write code, so when clicked, each div will write to the console
+        "Hi from idOfTheDiv".
+
+        b)  Now, using cut and paste, add 10 more divs (still each with a unique id).
+
+        document.getElementById("d1").onclick= (e)=> alert(e.target.id)
+document.getElementById("d2").onclick= (e)=> alert(e.target.id)
+document.getElementById("d3").onclick= (e)=> alert(e.target.id)
+document.getElementById("d4").onclick= (e)=> alert(e.target.id)
+document.getElementById("d5").onclick= (e)=> alert(e.target.id)
+document.getElementById("d6").onclick= (e)=> alert(e.target.id)
+document.getElementById("d7").onclick= (e)=> alert(e.target.id)
+document.getElementById("d8").onclick= (e)=> alert(e.target.id)
+document.getElementById("d9").onclick= (e)=> alert(e.target.id)
+document.getElementById("d10").onclick= (e)=> alert(e.target.id)
+
+-->
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .mydiv {
+            width: 25px;
+            height: 25px;
+            background-color:yellow;
+            margin:1px;}
+
+    </style>
+</head>
+<body>
+<div id="outer">
+<div id="d1" class="mydiv"></div>
+<div id="d2" class="mydiv"></div>
+<div id="d3" class="mydiv"></div>
+<div id="d4" class="mydiv"></div>
+<div id="d5" class="mydiv"></div>
+<div id="d6" class="mydiv"></div>
+<div id="d7" class="mydiv"></div>
+<div id="d8" class="mydiv"></div>
+<div id="d9" class="mydiv"></div>
+<div id="d10" class="mydiv"></div>
+</div>
+
+<script>
+
+    document.getElementById("outer").onclick = (e) => {
+        console.log(e.target.id)
+        if (e.target.id === "outer") {
+            return
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
