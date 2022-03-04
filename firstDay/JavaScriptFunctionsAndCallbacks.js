@@ -1,3 +1,5 @@
+//Færdig
+
 //1. Create a new JavaScript file and add these three functions
 
 //Function Declaration
@@ -41,8 +43,9 @@ console.log( cb(4,3,sub) ); // What will it print
 //console.log(cb(3,3,add())); // What will it print (and what was the problem)
 //This prints /Users/amandatolstruplaursen/Visual/First exercises.js:16
 //return "Result from the two numbers: "+n1+"+"+n2+"="+callback(n1,n2);
-//This is the function "add"s returnstatement.
-//The problem is that the function "add" is called with no arguments instead of just referenced by name (add() vs add), when it is used as a parameter.
+//This is the function "add"s return statement.
+//The problem is that the function "add" is called with no arguments instead of just referenced by name
+// (add() vs add), when it is used as a parameter.
 //The error message is "TypeError: callback is not a function".
 
 

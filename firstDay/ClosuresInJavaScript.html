@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Ikke færdig!!! -->
+
+    <!-- 1) Implement and test the Closure Counter Example from the Slides (slide 13) -->
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button onclick="test1()">Count counter1</button>
+<span id="c1"></span>
+<button onclick="test2()" >Count counter2</button>
+<span id="c2"></span>
+
+<script>
+
+    var makeCounter = function() {
+        var privateCounter = 0;
+        function changeBy(val) {
+            privateCounter += val;
+        }
+        return {
+            increment: function() {changeBy(1);},
+            decrement: function() {changeBy(-1);},
+            value: function() { return privateCounter;}
+        }
+    };
+
+    var counter1 = makeCounter();
+    var counter2 = makeCounter();
+
+    function test1(){
+        counter1.increment();
+        $("#c1").html(counter1.value());
+    }
+    function test2(){
+        counter2.increment();
+        $("#c2").html(counter2.value());
+    }
+</script>
+
+</body>
+</html>
