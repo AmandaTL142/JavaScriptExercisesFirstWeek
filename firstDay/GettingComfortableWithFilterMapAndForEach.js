@@ -1,4 +1,4 @@
-//Færdig + ekstra ikke lavet
+//Færdig, men ekstra ikke lavet
 
 //1) Declare a JavaScript array and initialize it with some names (Lars, Jan, Peter, Bo, Frederik etc.).
 //Use the filter method to create a new array with only names of length <=3.

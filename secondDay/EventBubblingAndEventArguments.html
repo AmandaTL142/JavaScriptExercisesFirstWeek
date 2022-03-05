@@ -2,27 +2,30 @@
 <html lang="en">
 <head>
 
-    <!--Påbegyndt
+    <!--Færdig
         a) Add a click handler to each div and write code, so when clicked, each div will write to the console
         "Hi from idOfTheDiv".
+        Gjort.
 
         b)  Now, using cut and paste, add 10 more divs (still each with a unique id).
+        Gjort.
 
         document.getElementById("d1").onclick= (e)=> alert(e.target.id)
-document.getElementById("d2").onclick= (e)=> alert(e.target.id)
-document.getElementById("d3").onclick= (e)=> alert(e.target.id)
-document.getElementById("d4").onclick= (e)=> alert(e.target.id)
-document.getElementById("d5").onclick= (e)=> alert(e.target.id)
-document.getElementById("d6").onclick= (e)=> alert(e.target.id)
-document.getElementById("d7").onclick= (e)=> alert(e.target.id)
-document.getElementById("d8").onclick= (e)=> alert(e.target.id)
-document.getElementById("d9").onclick= (e)=> alert(e.target.id)
-document.getElementById("d10").onclick= (e)=> alert(e.target.id)
+        document.getElementById("d2").onclick= (e)=> alert(e.target.id)
+        document.getElementById("d3").onclick= (e)=> alert(e.target.id)
+        document.getElementById("d4").onclick= (e)=> alert(e.target.id)
+        document.getElementById("d5").onclick= (e)=> alert(e.target.id)
+        document.getElementById("d6").onclick= (e)=> alert(e.target.id)
+        document.getElementById("d7").onclick= (e)=> alert(e.target.id)
+        document.getElementById("d8").onclick= (e)=> alert(e.target.id)
+        document.getElementById("d9").onclick= (e)=> alert(e.target.id)
+        document.getElementById("d10").onclick= (e)=> alert(e.target.id)
 
-c) Add an empty paragraph tag, with an id, to your HTML and change the code for both exercises above,
-so that output is not written to the console, but into this paragraph.
+        c) Add an empty paragraph tag, with an id, to your HTML and change the code for both exercises above,
+        so that output is not written to the console, but into this paragraph.
+        Gjort
 
-Hint: Use the innerText property of an Element
+        Hint: Use the innerText property of an Element
 
 -->
 
@@ -51,6 +54,8 @@ Hint: Use the innerText property of an Element
 <div id="d10" class="mydiv"></div>
 </div>
 
+<p id="par"></p>
+
 <script>
 
     document.getElementById("outer").onclick = (e) => {
@@ -59,6 +64,9 @@ Hint: Use the innerText property of an Element
         if (e.target.id === "outer") {
             return
         }
+
+        document.getElementById("par").textContent = "Hi from " + e.target.id;
+
     }
 
 
